@@ -2000,7 +2000,7 @@
       <spirit:modelParameter xsi:type="spirit:nameValueTypeType" spirit:dataType="std_logic_vector">
         <spirit:name>ADDRESS_OFFSET</spirit:name>
         <spirit:displayName>Address Offset</spirit:displayName>
-        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.ADDRESS_OFFSET" spirit:bitStringLength="64">0x0000000800000000</spirit:value>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.ADDRESS_OFFSET" spirit:bitStringLength="64">0x0000000000000000</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>MAX_OUTSTANDING_RREQ</spirit:name>
@@ -2036,7 +2036,7 @@
     <spirit:parameter>
       <spirit:name>ADDRESS_OFFSET</spirit:name>
       <spirit:displayName>Address Offset</spirit:displayName>
-      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.ADDRESS_OFFSET" spirit:bitStringLength="64">0x0000000800000000</spirit:value>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.ADDRESS_OFFSET" spirit:bitStringLength="64">0x0000000000000000</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>MAX_OUTSTANDING_RREQ</spirit:name>
