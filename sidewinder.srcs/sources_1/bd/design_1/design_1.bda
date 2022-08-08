@@ -44,105 +44,6 @@
       <data key="VT">PM</data>
     </node>
     <node id="n2">
-      <data key="VH">2</data>
-      <data key="VM">design_1</data>
-      <data key="VT">VR</data>
-    </node>
-    <node id="n3">
-      <data key="BA">0x0000000000001000</data>
-      <data key="BP">C_BASEADDR</data>
-      <data key="HA">0x0000000000001FFF</data>
-      <data key="HP">C_HIGHADDR</data>
-      <data key="MA">M_AXI_B</data>
-      <data key="MX">/pcie_bridge</data>
-      <data key="MI">M_AXI_B</data>
-      <data key="MS">SEG_measure_pci_bw_reg0</data>
-      <data key="MV">xilinx.com:ip:xdma:4.1</data>
-      <data key="TM">both</data>
-      <data key="SX">/measure_pci_bw</data>
-      <data key="SI">S_AXI</data>
-      <data key="SS">reg0</data>
-      <data key="SV">xilinx.com:module_ref:measure_bw:1.0</data>
-      <data key="TU">register</data>
-      <data key="VT">AC</data>
-    </node>
-    <node id="n4">
-      <data key="VM">design_1</data>
-      <data key="VT">BC</data>
-    </node>
-    <node id="n5">
-      <data key="BA">0x0000000000000000</data>
-      <data key="BP">axibar_0</data>
-      <data key="HA">0xFFFFFFFFFFFFFFFF</data>
-      <data key="HP">axibar_highaddr_0</data>
-      <data key="MA">M_AXI</data>
-      <data key="MX">/measure_pci_bw</data>
-      <data key="MI">M_AXI</data>
-      <data key="MS">SEG_pcie_bridge_BAR0</data>
-      <data key="MV">xilinx.com:module_ref:measure_bw:1.0</data>
-      <data key="TM">both</data>
-      <data key="SX">/pcie_bridge</data>
-      <data key="SI">S_AXI_B</data>
-      <data key="SS">BAR0</data>
-      <data key="SV">xilinx.com:ip:xdma:4.1</data>
-      <data key="TU">memory</data>
-      <data key="VT">AC</data>
-    </node>
-    <node id="n6">
-      <data key="BA">0x0000000000009000</data>
-      <data key="BP">baseaddr</data>
-      <data key="HA">0x0000000000009FFF</data>
-      <data key="HP">highaddr</data>
-      <data key="MA">M_AXI_B</data>
-      <data key="MX">/pcie_bridge</data>
-      <data key="MI">M_AXI_B</data>
-      <data key="MS">SEG_pcie_bridge_CTL0</data>
-      <data key="MV">xilinx.com:ip:xdma:4.1</data>
-      <data key="TM">both</data>
-      <data key="SX">/pcie_bridge</data>
-      <data key="SI">S_AXI_LITE</data>
-      <data key="SS">CTL0</data>
-      <data key="SV">xilinx.com:ip:xdma:4.1</data>
-      <data key="TU">memory</data>
-      <data key="VT">AC</data>
-    </node>
-    <node id="n7">
-      <data key="BA">0x0000000000008000</data>
-      <data key="BP">C_BASEADDR</data>
-      <data key="HA">0x0000000000008FFF</data>
-      <data key="HP">C_HIGHADDR</data>
-      <data key="MA">M_AXI_B</data>
-      <data key="MX">/pcie_bridge</data>
-      <data key="MI">M_AXI_B</data>
-      <data key="MS">SEG_ddr4_ram_C0_REG</data>
-      <data key="MV">xilinx.com:ip:xdma:4.1</data>
-      <data key="TM">both</data>
-      <data key="SX">/ddr4_ram</data>
-      <data key="SI">C0_DDR4_S_AXI_CTRL</data>
-      <data key="SS">C0_REG</data>
-      <data key="SV">xilinx.com:ip:ddr4:2.2</data>
-      <data key="TU">register</data>
-      <data key="VT">AC</data>
-    </node>
-    <node id="n8">
-      <data key="BA">0x0000000000000000</data>
-      <data key="BP">C_BASEADDR</data>
-      <data key="HA">0x0000000000000FFF</data>
-      <data key="HP">C_HIGHADDR</data>
-      <data key="MA">M_AXI_B</data>
-      <data key="MX">/pcie_bridge</data>
-      <data key="MI">M_AXI_B</data>
-      <data key="MS">SEG_axi_revision_reg0</data>
-      <data key="MV">xilinx.com:ip:xdma:4.1</data>
-      <data key="TM">both</data>
-      <data key="SX">/axi_revision</data>
-      <data key="SI">S_AXI</data>
-      <data key="SS">reg0</data>
-      <data key="SV">xilinx.com:module_ref:axi_revision:1.0</data>
-      <data key="TU">register</data>
-      <data key="VT">AC</data>
-    </node>
-    <node id="n9">
       <data key="BA">0x0000000000002000</data>
       <data key="BP">C_BASEADDR</data>
       <data key="HA">0x0000000000002FFF</data>
@@ -160,29 +61,128 @@
       <data key="TU">register</data>
       <data key="VT">AC</data>
     </node>
-    <edge id="e0" source="n4" target="n2">
+    <node id="n3">
+      <data key="BA">0x0000000000009000</data>
+      <data key="BP">baseaddr</data>
+      <data key="HA">0x0000000000009FFF</data>
+      <data key="HP">highaddr</data>
+      <data key="MA">M_AXI_B</data>
+      <data key="MX">/pcie_bridge</data>
+      <data key="MI">M_AXI_B</data>
+      <data key="MS">SEG_pcie_bridge_CTL0</data>
+      <data key="MV">xilinx.com:ip:xdma:4.1</data>
+      <data key="TM">both</data>
+      <data key="SX">/pcie_bridge</data>
+      <data key="SI">S_AXI_LITE</data>
+      <data key="SS">CTL0</data>
+      <data key="SV">xilinx.com:ip:xdma:4.1</data>
+      <data key="TU">memory</data>
+      <data key="VT">AC</data>
+    </node>
+    <node id="n4">
+      <data key="VM">design_1</data>
+      <data key="VT">BC</data>
+    </node>
+    <node id="n5">
+      <data key="BA">0x0000000000000000</data>
+      <data key="BP">C_BASEADDR</data>
+      <data key="HA">0x0000000000000FFF</data>
+      <data key="HP">C_HIGHADDR</data>
+      <data key="MA">M_AXI_B</data>
+      <data key="MX">/pcie_bridge</data>
+      <data key="MI">M_AXI_B</data>
+      <data key="MS">SEG_axi_revision_reg0</data>
+      <data key="MV">xilinx.com:ip:xdma:4.1</data>
+      <data key="TM">both</data>
+      <data key="SX">/axi_revision</data>
+      <data key="SI">S_AXI</data>
+      <data key="SS">reg0</data>
+      <data key="SV">xilinx.com:module_ref:axi_revision:1.0</data>
+      <data key="TU">register</data>
+      <data key="VT">AC</data>
+    </node>
+    <node id="n6">
+      <data key="BA">0x0000000000000000</data>
+      <data key="BP">axibar_0</data>
+      <data key="HA">0xFFFFFFFFFFFFFFFF</data>
+      <data key="HP">axibar_highaddr_0</data>
+      <data key="MA">M_AXI</data>
+      <data key="MX">/measure_pci_bw</data>
+      <data key="MI">M_AXI</data>
+      <data key="MS">SEG_pcie_bridge_BAR0</data>
+      <data key="MV">xilinx.com:module_ref:measure_bw:1.0</data>
+      <data key="TM">both</data>
+      <data key="SX">/pcie_bridge</data>
+      <data key="SI">S_AXI_B</data>
+      <data key="SS">BAR0</data>
+      <data key="SV">xilinx.com:ip:xdma:4.1</data>
+      <data key="TU">memory</data>
+      <data key="VT">AC</data>
+    </node>
+    <node id="n7">
+      <data key="VH">2</data>
+      <data key="VM">design_1</data>
+      <data key="VT">VR</data>
+    </node>
+    <node id="n8">
+      <data key="BA">0x0000000000001000</data>
+      <data key="BP">C_BASEADDR</data>
+      <data key="HA">0x0000000000001FFF</data>
+      <data key="HP">C_HIGHADDR</data>
+      <data key="MA">M_AXI_B</data>
+      <data key="MX">/pcie_bridge</data>
+      <data key="MI">M_AXI_B</data>
+      <data key="MS">SEG_measure_pci_bw_reg0</data>
+      <data key="MV">xilinx.com:ip:xdma:4.1</data>
+      <data key="TM">both</data>
+      <data key="SX">/measure_pci_bw</data>
+      <data key="SI">S_AXI</data>
+      <data key="SS">reg0</data>
+      <data key="SV">xilinx.com:module_ref:measure_bw:1.0</data>
+      <data key="TU">register</data>
+      <data key="VT">AC</data>
+    </node>
+    <node id="n9">
+      <data key="BA">0x0000000000008000</data>
+      <data key="BP">C_BASEADDR</data>
+      <data key="HA">0x0000000000008FFF</data>
+      <data key="HP">C_HIGHADDR</data>
+      <data key="MA">M_AXI_B</data>
+      <data key="MX">/pcie_bridge</data>
+      <data key="MI">M_AXI_B</data>
+      <data key="MS">SEG_ddr4_ram_C0_REG</data>
+      <data key="MV">xilinx.com:ip:xdma:4.1</data>
+      <data key="TM">both</data>
+      <data key="SX">/ddr4_ram</data>
+      <data key="SI">C0_DDR4_S_AXI_CTRL</data>
+      <data key="SS">C0_REG</data>
+      <data key="SV">xilinx.com:ip:ddr4:2.2</data>
+      <data key="TU">register</data>
+      <data key="VT">AC</data>
+    </node>
+    <edge id="e0" source="n4" target="n7">
     </edge>
-    <edge id="e1" source="n2" target="n1">
+    <edge id="e1" source="n7" target="n1">
     </edge>
-    <edge id="e2" source="n0" target="n1">
+    <edge id="e2" source="n5" target="n1">
       <data key="EH">2</data>
     </edge>
-    <edge id="e3" source="n8" target="n1">
+    <edge id="e3" source="n9" target="n1">
       <data key="EH">2</data>
     </edge>
-    <edge id="e4" source="n3" target="n1">
+    <edge id="e4" source="n8" target="n1">
       <data key="EH">2</data>
     </edge>
-    <edge id="e5" source="n9" target="n1">
+    <edge id="e5" source="n2" target="n1">
       <data key="EH">2</data>
     </edge>
-    <edge id="e6" source="n7" target="n1">
+    <edge id="e6" source="n3" target="n1">
       <data key="EH">2</data>
     </edge>
-    <edge id="e7" source="n6" target="n1">
+    <edge id="e7" source="n0" target="n1">
       <data key="EH">2</data>
     </edge>
-    <edge id="e8" source="n5" target="n1">
+    <edge id="e8" source="n6" target="n1">
       <data key="EH">2</data>
     </edge>
   </graph>
